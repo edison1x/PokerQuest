@@ -1,0 +1,4 @@
+MultiplierJoker: This common joker adds +5 multiplier
+MoonJoker: This rare joker provides x4 multiplier
+HeartSnakeJoker: This uncommon joker provides x2 multiplier for each card played with Heart
+CastleJoker: This ultra-rare joker provides +50 score and 2x multiplier for each king or queen
