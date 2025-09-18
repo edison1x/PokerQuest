@@ -1,5 +1,6 @@
 import pygame as pyg
 from typing import override
+import os
 from .card import Card
 from .CONSTANTS import (
     cards_path,
@@ -34,7 +35,7 @@ class PlayingCard(Card):
         """
         super().__init__(card)
         self.__id = self.create_id(card)
-        self.__image = pyg.image.load(f"{cards_path}\\{self.rank}{self.suit}.png")
+        self.__image = pyg.image.load(os.path.join(cards_path, f"{self.rank}{self.suit.upper()}.png"))
         self.__image = pyg.transform.scale(self.__image, (DISPLAY_DIMENSIONS_X//16, DISPLAY_DIMENSIONS_Y//6))
 
     @property
