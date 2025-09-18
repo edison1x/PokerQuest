@@ -1,5 +1,6 @@
 import pygame as pyg
 import random
+import os
 from typing import override
 from .card import Card
 from .CONSTANTS import (
@@ -16,8 +17,8 @@ def load_joker_descriptions():
         dict: A dictionary with joker names as keys and their descriptions as values.
     """
     joker_descriptions = {}
-
-    with open(f'{code_path}\\joker_descriptions.txt', 'r') as file:
+    joker_descriptions_path = os.path.join(code_path, "joker_descriptions.txt")
+    with open(joker_descriptions_path, 'r') as file:
         for line in file:
             if ':' in line:
                 joker_name, description = line.strip().split(':', 1)
@@ -68,7 +69,7 @@ class JokerCard(Card):
         self.price = 0
         self._sell_value = 0
         self._id = self._generate_id()
-        self.__image = pyg.image.load(f"{jokers_path}\\{card_name}.jpg")
+        self.__image = pyg.image.load(os.path.join(jokers_path, f"{card_name}.jpg"))
         self.__image = pyg.transform.scale(self.__image, CARD_DIMENSIONS)
 
     @property

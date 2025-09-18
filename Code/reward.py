@@ -1,5 +1,6 @@
 import random
 import pygame as pyg
+import os
 from .CONSTANTS import (
     DISPLAY_DIMENSIONS_X,
     DISPLAY_DIMENSIONS_Y,
@@ -36,7 +37,7 @@ class RewardRoom():
         self.__display = display
         self.__bg = bg
         self.__player = player
-        self.__pouch_image = pyg.image.load(f"{image_path}\\money_bag.png")
+        self.__pouch_image = pyg.image.load(os.path.join(image_path, "money_bag.png"))
         self.__pouch_image = pyg.transform.scale(self.__pouch_image, (DISPLAY_DIMENSIONS_X//5, DISPLAY_DIMENSIONS_Y//5))
         self.reward_text = ""
         self.reward_displayed = False

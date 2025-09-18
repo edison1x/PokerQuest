@@ -1,6 +1,7 @@
 import sys
 import random
 import pygame as pyg
+import os
 from .dealerroom import DealerRoom
 from .reward import RewardRoom
 from .shop import ShopRoom
@@ -33,7 +34,7 @@ class DisplaySetup:
         self.__background_img = pyg.image.load(background_path)
         self.__main_clock = pyg.time.Clock()
         self.__display = pyg.display.set_mode(DISPLAY_DIMENSIONS)
-        self.__icon = pyg.image.load(f"{cards_path}\\AS.png")
+        self.__icon = pyg.image.load(os.path.join(cards_path, "AS.png"))
 
         pyg.display.set_icon(self.__icon)
         pyg.display.set_caption("Prototype")
