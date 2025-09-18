@@ -7,7 +7,7 @@ from .CONSTANTS import (
     text_font,
     OFF_WHITE
 )
-from ui import Text
+from .ui import Text
 
 class RewardRoom():
     """
