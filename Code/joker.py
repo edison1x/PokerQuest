@@ -6,7 +6,7 @@ from CONSTANTS import (
     jokers_path,
     CARD_DIMENSIONS,
     DISPLAY_DIMENSIONS_X,
-    game_path
+    code_path
 )
 
 def load_joker_descriptions():
@@ -17,7 +17,7 @@ def load_joker_descriptions():
     """
     joker_descriptions = {}
 
-    with open(f'{game_path}\\joker_descriptions.txt', 'r') as file:
+    with open(f'{code_path}\\joker_descriptions.txt', 'r') as file:
         for line in file:
             if ':' in line:
                 joker_name, description = line.strip().split(':', 1)

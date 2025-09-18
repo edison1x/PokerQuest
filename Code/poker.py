@@ -314,7 +314,7 @@ class ScoringStrategy:
     """
     def __init__(self):
         self.base_hand_score_multiplier = {
-        "High Card": {"score": 775, "multiplier": 1, "level": 1},
+        "High Card": {"score": 5, "multiplier": 1, "level": 1},
         "One Pair": {"score": 10, "multiplier": 2, "level": 1},
         "Two Pair": {"score": 20, "multiplier": 3, "level": 1},
         "Three of a Kind": {"score": 35, "multiplier": 3, "level": 1},

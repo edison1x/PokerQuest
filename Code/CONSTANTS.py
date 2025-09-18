@@ -1,17 +1,13 @@
 import os
 import pygame as pyg
 
-os.chdir("C:/Users/ediso/OneDrive/NEA")
-
-
-game_path = os.path.dirname(os.path.abspath(__file__))
-
-nea_path = os.path.dirname(game_path)
-image_path = os.path.join(nea_path, "imgs")
+code_path = os.path.dirname(os.path.abspath(__file__))
+root_path = os.path.dirname(code_path)
+image_path = os.path.join(root_path, "Images")
 cards_path = os.path.join(image_path, "cards")
 jokers_path = os.path.join(image_path, "jokers")
 background_path = os.path.join(image_path, "background.jpg")
-text_font_path = os.path.join(nea_path, "Roboto-Black.ttf")
+text_font_path = os.path.join(root_path, "Roboto-Black.ttf")
 
 
 rank_map_id = {
