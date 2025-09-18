@@ -92,6 +92,7 @@ class Game:
         self.__map_generator = MapGenerator()
         self.__current_node = self.__map_generator.starting_node
         self.__map_visualiser = MapVisualiser(self.__map_generator, self.__display_setup.display)
+        self.game_loop()
 
     def game_loop(self):
         """The main loop of the game that manages the game state and updates the display."""
@@ -280,6 +281,5 @@ class Rooms:
         self.shop_room = ShopRoom(display, display_setup.background_image, player, joker_deck, scoring_system)
         self.recent_random_rooms = []
 
-
-game = Game()
-game.game_loop()
+if __name__ == "__main__":
+    Game()
