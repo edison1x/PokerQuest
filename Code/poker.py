@@ -3,7 +3,7 @@ This module defines classes and methods for evaluating a poker hand
 and managing the point scoring system.
 """
 from collections import Counter
-from CONSTANTS import rank_map_id
+from .CONSTANTS import rank_map_id
 
 
 class PokerEval:

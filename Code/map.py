@@ -1,6 +1,6 @@
 import random
 import pygame as pyg
-from CONSTANTS import (
+from .CONSTANTS import (
     DISPLAY_DIMENSIONS_X,
     DISPLAY_DIMENSIONS_Y,
     text_font,

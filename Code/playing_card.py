@@ -1,7 +1,7 @@
 import pygame as pyg
 from typing import override
-from card import Card
-from CONSTANTS import (
+from .card import Card
+from .CONSTANTS import (
     cards_path,
     DISPLAY_DIMENSIONS_X,
     DISPLAY_DIMENSIONS_Y,

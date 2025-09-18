@@ -1,6 +1,6 @@
 import random
-from playing_card import PlayingCard
-from CONSTANTS import rank_map_id, suit_map
+from .playing_card import PlayingCard
+from .CONSTANTS import rank_map_id, suit_map
 
 class Deck:
     """

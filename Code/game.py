@@ -1,15 +1,15 @@
 import sys
 import random
 import pygame as pyg
-from dealerroom import DealerRoom
-from reward import RewardRoom
-from shop import ShopRoom
-from player import Player
-from map import MapGenerator, MapVisualiser
-from dealer import Dealers
-from poker import DefaultScoringStrategy
-from CONSTANTS import DISPLAY_DIMENSIONS, DISPLAY_DIMENSIONS_Y, background_path, cards_path
-from joker import (
+from .dealerroom import DealerRoom
+from .reward import RewardRoom
+from .shop import ShopRoom
+from .player import Player
+from .map import MapGenerator, MapVisualiser
+from .dealer import Dealers
+from .poker import DefaultScoringStrategy
+from .CONSTANTS import DISPLAY_DIMENSIONS, DISPLAY_DIMENSIONS_Y, background_path, cards_path
+from .joker import (
     JokerTree,
     CategoryNode,
     MultiplierJoker,

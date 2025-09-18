@@ -1,8 +1,8 @@
 import pygame as pyg
-from hand import Hand
-from ui import UI, Button, TextRect, Text
-from poker import PokerEval
-from CONSTANTS import (
+from .hand import Hand
+from .ui import UI, Button, TextRect, Text
+from .poker import PokerEval
+from .CONSTANTS import (
     DISPLAY_DIMENSIONS_X,
     DISPLAY_DIMENSIONS_Y,
     CARD_DIMENSIONS,

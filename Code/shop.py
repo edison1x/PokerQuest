@@ -1,8 +1,8 @@
 import pygame as pyg
 import random
-from ui import UI, Button, Text, TextRect
-from joker import get_joker_description
-from CONSTANTS import (
+from .ui import UI, Button, Text, TextRect
+from .joker import get_joker_description
+from .CONSTANTS import (
     DISPLAY_DIMENSIONS_X,
     DISPLAY_DIMENSIONS_Y,
     BUTTON_WIDTH ,

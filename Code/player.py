@@ -1,5 +1,5 @@
-from joker import JokerHand
-from deck import Deck
+from .joker import JokerHand
+from .deck import Deck
 
 
 
@@ -32,7 +32,7 @@ class Player:
         self.__number_of_discards_left = self.__base_number_of_discards
         self.__player_deck = Deck()
         self.__player_joker_hand = JokerHand(display)
-       
+
     @property
     def joker_hand(self):
         """

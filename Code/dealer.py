@@ -1,9 +1,9 @@
 import random
 from typing import override
 import pygame as pyg
-from TargetScoreCalculator import TargetScoreCalculator
-from ui import Text
-from CONSTANTS import(
+from .TargetScoreCalculator import TargetScoreCalculator
+from .ui import Text
+from .CONSTANTS import(
     OFF_WHITE,
     text_font,
     DISPLAY_DIMENSIONS_X,

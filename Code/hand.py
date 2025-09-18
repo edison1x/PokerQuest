@@ -1,4 +1,4 @@
-from CONSTANTS import DISPLAY_DIMENSIONS_X
+from .CONSTANTS import DISPLAY_DIMENSIONS_X
 
 class Hand:
     """

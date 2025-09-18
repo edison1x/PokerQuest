@@ -1,8 +1,8 @@
 import pygame as pyg
 import random
 from typing import override
-from card import Card
-from CONSTANTS import (
+from .card import Card
+from .CONSTANTS import (
     jokers_path,
     CARD_DIMENSIONS,
     DISPLAY_DIMENSIONS_X,
