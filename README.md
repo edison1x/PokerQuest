@@ -21,7 +21,7 @@ pip install pygame
 python -m Code.game
 ```
 ## About the game
-I was heavily inspired by "Balatro" and "Slay the Spire", both of which are deckbuilding games. I decided to take the core gameplay from Balatro and combined this with the a similar procedurally generated map from Slay the Spire.
+I was heavily inspired by "Balatro" and "Slay the Spire", both of which are deckbuilding games. I decided to take the core gameplay from Balatro and combined this with a similar procedurally generated map from Slay the Spire.
 ## How to play the game
 ### The map
 Below is an example of what the map might look like.
